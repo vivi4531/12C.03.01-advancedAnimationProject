@@ -77,16 +77,22 @@ function toggleOption(event){
     //Toggle feature in model 
     features[feature] = !features[feature]; 
     if(features[feature] === true){
+        // if(features.phonegripButterfly===true || features.phonegripHeart===true || features.phonegripHalo===true){
+        //     alert("test"); 
+        // } else {
+            
         //Select target and add chosen class
         target.classList.add("chosen"); 
 
         //Remove the hide class 
         document.querySelector(`[data-feature="${feature}"`).classList.remove("hide"); 
-
-    } else {
+    //     }
+ 
+     } else {
         target.classList.remove("chosen"); 
 
         //Add the hide class 
         document.querySelector(`[data-feature="${feature}"`).classList.add("hide"); 
     }
 }
+
