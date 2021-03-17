@@ -20,9 +20,11 @@ async function init(){
     let mySvgData = await response.text(); 
     document.querySelector("#iphone-basic").innerHTML = mySvgData; 
 
+    document.querySelectorAll(".option").forEach(option=>option.addEventListener("click", toggleOption)); 
     startColorManipulation();
 }
 
+//Color configurator 
 function startColorManipulation(){
     document.querySelectorAll(".g_to_interact_with").forEach((eachG)=>{
         console.log(eachG); 
@@ -61,5 +63,27 @@ function clickWantedColor(){
 
     if(elementToPaint != undefined){
         elementToPaint.style.fill = this.getAttribute("fill"); 
+    }
+}
+
+//Feature configurator
+function toggleOption(event){
+    const target = event.currentTarget; 
+    const feature = target.dataset.feature; 
+
+    //Toggle feature in model 
+    features[feature] = !features[feature]; 
+    if(features[feature] === true){
+        //Select target and add chosen class
+        target.classList.add("chosen"); 
+
+        //Remove the hide class 
+        document.querySelector(`[data-feature="${feature}"`).classList.remove("hide"); 
+
+    } else {
+        target.classList.remove("chosen"); 
+
+        //Add the hide class 
+        document.querySelector(`[data-feature="${feature}"`).classList.add("hide"); 
     }
 }
