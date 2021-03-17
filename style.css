@@ -24,7 +24,127 @@ img {
   display: none;
 }
 
+/* FONT */
+
+@font-face {
+  font-family: "cloister_blacklight";
+  src: url("font/cloisterblacklight-axjg-webfont.woff2") format("woff2"),
+    url("font/cloisterblacklight-axjg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "cloister_blacklight";
+  font-size: 5em;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#configurator h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#configurator figcaption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#configurator h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
 /* CONFIGURATOR */
 #configurator {
   display: flex;
+  margin: 50px;
+}
+
+#color-box,
+#options {
+  flex-grow: 1;
+  flex-basis: 300px;
+  box-shadow: 3px 3px 8px #ffafce;
+  border-radius: 1em;
+}
+
+#product-preview {
+  flex-grow: 2;
+  flex-basis: 1000px;
+  box-shadow: 3px 3px 8px #ffafce;
+  border-radius: 1em;
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* HEADER + NAVIGATION */
+header {
+  background-color: #afe3ff;
+  margin-bottom: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+nav a:hover {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
 }

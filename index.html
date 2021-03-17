@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12C.03.01-advancedAnimationProject</title>
+    <!-- Link to Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Pimp Your iPhone</h1>
+    <header>
+        <a href=""><h1>Pimp Your iPhone</h1></a>
+    <nav>
+        <a href="">Frontpage</a>
+        <a href="">Configuratorpage</a>
+        <a href="">Scrollpage</a>
+    </nav>
+    </header>
+
     <h2>Your personal phone configurator</h2>
 
     <!-- Configurator -->
@@ -17,17 +28,17 @@
 
          <!-- Color selector -->
          <div id="color-box">
-            Available colors 
-            <svg viewBox="0 0 1100 200">
-                <rect class="color_btn" x="0" width="200" height="200" fill="black"/>
-                <rect class="color_btn" x="0" width="200" height="200" fill="red"/>
-                <rect class="color_btn" x="0" width="200" height="200" fill="yellow"/>
-                <rect class="color_btn" x="0" width="200" height="200" fill="blue"/>
-                <rect class="color_btn" x="0" width="200" height="200" fill="green"/>
+            <h3>Available colors</h3>
+            <!-- <div id="color_btns"> -->
+            <svg id="color_btns" viewBox="0 0 1100 4000">
+                <rect class="color_btn" x="350" y="0" width="400" height="400" fill="black"/>
+                <rect class="color_btn" x="350" y="500" width="400" height="400" fill="red"/>
+                <rect class="color_btn" x="350" y="1000" width="400" height="400" fill="yellow"/>
+                <rect class="color_btn" x="350" y="1500" width="400" height="400" fill="blue"/>
+                <rect class="color_btn" x="350" y="2000" width="400" height="400" fill="green"/>
             </svg>
+            <!-- </div> -->
         </div>
-        
-        
         
             <!-- Product preview-->
             <div id="product-preview">
@@ -37,33 +48,29 @@
                 <img class="hide" src="images/iphone_sticker_rainbow.png" alt="" data-feature="rainbow">
             </div>
             
-<!-- Feature list - items that can be added to iPhone -->
-        
-<div id="options">
-    Available features
-    <!-- Stickers -->
-    <h3>Stickers</h3>
-    <figure class="option" data-feature="dramaqueen">
-        <img src="images/feature_sticker_dramaqueen.png" alt="dramaqueen">
-        <figcaption>Dramaqueen</figcaption>
-    </figure>
-    <figure class="option" data-feature="heart">
-        <img src="images/feature_sticker_heart.png" alt="dramaheartqueen">
-        <figcaption>Heart</figcaption>
-    </figure>
-    <figure class="option" data-feature="rainbow">
-        <img src="images/feature_sticker_rainbow.png" alt="rainbow">
-        <figcaption>Rainbow</figcaption>
-    </figure>
-</div>
-            
-       
-
+            <!-- Feature list - items that can be added to iPhone -->
+                    
+            <div id="options">
+                <h3>Available features</h3>
+                <!-- Stickers -->
+                <h4>Stickers</h4>
+                <figure class="option" data-feature="dramaqueen">
+                    <img src="images/feature_sticker_dramaqueen.png" alt="dramaqueen">
+                    <figcaption>Dramaqueen</figcaption>
+                </figure>
+                <figure class="option" data-feature="heart">
+                    <img src="images/feature_sticker_heart.png" alt="dramaheartqueen">
+                    <figcaption>Heart</figcaption>
+                </figure>
+                <figure class="option" data-feature="rainbow">
+                    <img src="images/feature_sticker_rainbow.png" alt="rainbow">
+                    <figcaption>Rainbow</figcaption>
+                </figure>
+            </div>
     </div>
 
+    <footer><p>© Amalie Grøn & Vivi Mortensen 2021</p></footer>
 
-
-    
     <script src="script.js"></script>
 </body>
 </html>
