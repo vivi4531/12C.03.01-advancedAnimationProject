@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -5,4 +6,25 @@
 
 img {
   width: 100%;
+}
+
+/* SVG */
+
+#shadow_Image,
+#shadow_Image-2 {
+  pointer-events: none;
+}
+
+.g_to_interact_with {
+  fill: transparent;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/* CONFIGURATOR */
+#configurator {
+  display: flex;
 }

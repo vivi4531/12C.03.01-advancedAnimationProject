@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <h1>Pimp Your iPhone</h1>
+    <h2>Your personal phone configurator</h2>
+
+    <!-- Configurator -->
+    <div id="configurator">
+
+         <!-- Color selector -->
+         <div id="color-box">
+            Available colors 
+            <svg viewBox="0 0 1100 200">
+                <rect class="color_btn" x="0" width="200" height="200" fill="black"/>
+                <rect class="color_btn" x="0" width="200" height="200" fill="red"/>
+                <rect class="color_btn" x="0" width="200" height="200" fill="yellow"/>
+                <rect class="color_btn" x="0" width="200" height="200" fill="blue"/>
+                <rect class="color_btn" x="0" width="200" height="200" fill="green"/>
+            </svg>
+        </div>
+        
+        
+        
+            <!-- Product preview-->
+            <div id="product-preview">
+                <div id="iphone-basic"></div>
+                <img class="hide" src="images/iphone_sticker_dramaqueen.png" alt="" data-feature="dramaqueen">
+                <img class="hide" src="images/iphone_sticker_heart.png" alt="" data-feature="heart">
+                <img class="hide" src="images/iphone_sticker_rainbow.png" alt="" data-feature="rainbow">
+            </div>
+            
+<!-- Feature list - items that can be added to iPhone -->
+        
+<div id="options">
+    Available features
+    <!-- Stickers -->
+    <h3>Stickers</h3>
+    <figure class="option" data-feature="dramaqueen">
+        <img src="images/feature_sticker_dramaqueen.png" alt="dramaqueen">
+        <figcaption>Dramaqueen</figcaption>
+    </figure>
+    <figure class="option" data-feature="heart">
+        <img src="images/feature_sticker_heart.png" alt="dramaheartqueen">
+        <figcaption>Heart</figcaption>
+    </figure>
+    <figure class="option" data-feature="rainbow">
+        <img src="images/feature_sticker_rainbow.png" alt="rainbow">
+        <figcaption>Rainbow</figcaption>
+    </figure>
+</div>
+            
+       
+
+    </div>
+
+
+
     
     <script src="script.js"></script>
 </body>
