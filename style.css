@@ -103,6 +103,11 @@ p {
   border-radius: 1em;
 }
 
+/* Added a width so the image shows in Chrome */
+#iphone-basic {
+  width: 100%;
+}
+
 #product-preview {
   flex-grow: 2;
   flex-basis: 1000px;
