@@ -24,6 +24,10 @@ img {
   display: none;
 }
 
+path {
+  stroke-width: 20;
+}
+
 /* FONT */
 
 @font-face {
@@ -108,6 +112,22 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+}
+
+.option {
+  opacity: 50%;
+}
+
+.option:hover {
+  opacity: 100%;
+}
+
+.chosen {
+  opacity: 100%;
+}
+
+.color_btn {
+  cursor: pointer;
 }
 
 /* HEADER + NAVIGATION */
