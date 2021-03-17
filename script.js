@@ -4,7 +4,10 @@
 const features = {
     stickerDramaqueen: false, 
     stickerHeart: false, 
-    stickerRainbow: false 
+    stickerRainbow: false, 
+    phonegripButterfly: false, 
+    phonegripHeart: false, 
+    phonegripHalo: false
 }; 
 
 //Global variable
